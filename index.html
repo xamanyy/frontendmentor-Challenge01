@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,800;1,300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,800;1,300&display=swap');
+
+      *{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+ 
+      }
+
+      .main{
+        width: 100vw;
+        height: 100vh;
+        background:#f5d14f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .child{
+        width: 380px;
+        height: 510px;
+        background: white;
+        border-top: solid 1px #000;
+        border-left: solid 1px #000;
+        border-right: solid 9px #000;
+        border-bottom: solid 9px #000;
+        border-radius:20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .img-holder {
+            display: flex;
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            margin-bottom: 8px;
+            margin-top: 8px;
+      }
+      .imgg{
+        height: 210px;
+        border-radius:20px;
+        padding: 10px;
+      }
+
+      .content{
+        background-color: #f5d14f;
+        width: 120px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        border-radius: 9px;
+        margin-top: 10px;
+        padding: 7px;
+        margin-left: -12.5em;
+      }
+
+      .dte{
+        width: max-content;
+        height: max-content;
+        margin-top: 14px;
+        display: flex;
+        margin-left: -10em;
+        font-family: 'Figtree', sans-serif;
+        font-weight: 400;
+      }
+
+      .heading{
+        margin-top: 14px;
+        width: max-content;
+        height: max-content;
+      }
+
+      .descriptions{
+        width: 360px;
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Figtree', sans-serif;
+        font-weight: 400;
+        color: darkgrey;
+      }
+
+      .last{
+        display: flex;
+        width: 360px;
+        height: 60px;
+        margin-left: 21px;
+        margin-top: 20px;
+        padding: 5px;
+        flex-direction:row;
+        align-items: center;
+       
+      }
+      h2{
+        width: 150px;
+        padding: auto;
+        height: max-content;
+        margin-left: 16px;
+        font-family: 'Figtree', sans-serif;
+        font-weight: 800;
+      }
+      h1{
+        font-size: 28px;
+        font-family: 'Figtree', sans-serif;
+        font-weight: 800;
+      }
+      h3{
+        font-family: 'Figtree', sans-serif;
+        font-weight: 800;
+        font-size: medium;
+      }
+  </style>
+
+</head>
+<body>
+    <div class="main">
+       <div class="child">
+          <div class="img-holder">
+            <img class="imgg" src="./assets/images/illustration-article.svg" alt = "">
+          </div>
+
+          <div class="content">
+              <h3>Learning</h3>
+          </div>
+          <span class="dte">Published 21 Dec 2023</span>
+          <h1 class="heading">HTML & CSS foundations</h1>
+          <p class="descriptions">These languages are the backbone of every website, defining structure, content and presentation.</p>
+          <div class="last">
+              <img src="./assets/images/image-avatar.webp" alt="" />
+              <h2>Greg Hooper</h2>
+          </div>
+       </div>
+    </div>
+</body>
+</html>
